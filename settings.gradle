@@ -1,0 +1,23 @@
+pluginManagement {
+    repositories {
+        gradlePluginPortal()
+        mavenCentral()
+        maven { url = uri("https://maven.neoforged.net/releases") }
+    }
+}
+
+dependencyResolutionManagement {
+    repositories {
+        mavenCentral()
+        maven { url = uri("https://maven.neoforged.net/releases") }
+        maven { url = uri("https://libraries.minecraft.net") }
+    }
+}
+
+rootProject.name = "Marbleds-Arsenal"
+
+includeBuild("../mcore") {
+    dependencySubstitution {
+        substitute module("net.marblednull:mcore") using project(":")
+    }
+}

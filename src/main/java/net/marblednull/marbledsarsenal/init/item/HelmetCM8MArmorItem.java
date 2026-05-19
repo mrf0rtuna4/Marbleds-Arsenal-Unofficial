@@ -1,0 +1,59 @@
+package net.marblednull.marbledsarsenal.init.item;
+
+import net.marblednull.marbledsarsenal.client.renderer.HelmetCM8MRenderer;
+import net.minecraft.client.model.HumanoidModel;
+import net.minecraft.world.entity.EquipmentSlot;
+import net.minecraft.world.entity.LivingEntity;
+import net.minecraft.world.item.ArmorItem;
+import net.minecraft.world.item.ArmorMaterial;
+import net.minecraft.world.item.ItemStack;
+import net.neoforged.neoforge.client.extensions.common.IClientItemExtensions;
+import net.neoforged.neoforge.registries.DeferredHolder;
+import org.jetbrains.annotations.NotNull;
+import software.bernie.geckolib.animatable.GeoItem;
+import software.bernie.geckolib.animatable.instance.AnimatableInstanceCache;
+import software.bernie.geckolib.animatable.instance.SingletonAnimatableInstanceCache;
+import software.bernie.geckolib.animation.AnimatableManager;
+
+import java.util.function.Consumer;
+
+public class HelmetCM8MArmorItem extends ArmorItem implements GeoItem {
+    private final AnimatableInstanceCache cache = new SingletonAnimatableInstanceCache(this);
+
+    public HelmetCM8MArmorItem(
+            DeferredHolder<ArmorMaterial, ArmorMaterial> material,
+            Type type,
+            Properties properties
+    ) {
+        super(material, type, properties);
+    }
+
+    @SuppressWarnings("removal")
+    @Override
+    public void initializeClient(Consumer<IClientItemExtensions> consumer) {
+        consumer.accept(new IClientItemExtensions() {
+            private HelmetCM8MRenderer renderer;
+
+            @Override
+            public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
+                                                                   EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
+                if (this.renderer == null)
+                    this.renderer = new HelmetCM8MRenderer();
+
+                this.renderer.prepForRender(LivingEntity, itemStack, equipmentSlot, original);
+                return this.renderer;
+            }
+        });
+    }
+
+    @Override
+    public void registerControllers(AnimatableManager.ControllerRegistrar controllerRegistrar) {
+
+    }
+
+    @Override
+    public AnimatableInstanceCache getAnimatableInstanceCache() {
+
+        return cache;
+    }
+}
