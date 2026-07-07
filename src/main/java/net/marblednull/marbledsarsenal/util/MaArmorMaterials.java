@@ -3,6 +3,7 @@ package net.marblednull.marbledsarsenal.util;
 import net.marblednull.marbledsarsenal.MarbledsArsenal;
 import net.marblednull.mcore.init.ModItems;
 import net.minecraft.core.registries.Registries;
+import net.minecraft.resources.ResourceLocation;
 import net.minecraft.sounds.SoundEvents;
 import net.minecraft.world.item.ArmorItem;
 import net.minecraft.world.item.ArmorMaterial;
@@ -14,6 +15,8 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 
 import java.util.List;
 import java.util.Map;
+
+import static net.neoforged.neoforge.internal.versions.neoforge.NeoForgeVersion.MOD_ID;
 
 public final class MaArmorMaterials {
 
@@ -32,7 +35,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_LEATHER,
                     () -> Ingredient.of(Items.LEATHER),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "hat")
+                            )
+                    ),
                     0.0F,
                     0.0F
             ));
@@ -49,7 +56,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "combat_helmet")
+                            )
+                    ),
                     0.0F,
                     0.0F
             ));
@@ -66,7 +77,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "plate_carrier_light")
+                            )
+                    ),
                     0.5F,
                     0.0F
             ));
@@ -83,7 +98,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "plate_carrier_heavy")
+                            )
+                    ),
                     1.5F,
                     0.1F
             ));
@@ -100,7 +119,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "gas_mask")
+                            )
+                    ),
                     0.0F,
                     0.0F
             ));
@@ -117,7 +140,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_LEATHER,
                     () -> Ingredient.of(Items.LEATHER),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "hazmat")
+                            )
+                    ),
                     0.0F,
                     0.0F
             ));
@@ -134,7 +161,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_LEATHER,
                     () -> Ingredient.of(Items.LEATHER),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "ghillie")
+                            )
+                    ),
                     0.0F,
                     0.0F
             ));
@@ -151,7 +182,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(Items.LEATHER),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "civil")
+                            )
+                    ),
                     2.0F,
                     0.1F
             ));
@@ -168,7 +203,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "tactical")
+                            )
+                    ),
                     2.0F,
                     0.1F
             ));
@@ -185,7 +224,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_IRON,
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "military")
+                            )
+                    ),
                     2.0F,
                     0.1F
             ));
@@ -202,7 +245,11 @@ public final class MaArmorMaterials {
                     15,
                     SoundEvents.ARMOR_EQUIP_NETHERITE,
                     () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()),
-                    List.of(),
+                    List.of(
+                            new ArmorMaterial.Layer(
+                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "juggernaut")
+                            )
+                    ),
                     3.0F,
                     0.2F
             ));

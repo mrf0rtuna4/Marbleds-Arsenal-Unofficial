@@ -35,7 +35,7 @@ public class HelmetCM8MArmorItem extends ArmorItem implements GeoItem {
             private HelmetCM8MRenderer renderer;
 
             @Override
-            public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
+            public @NotNull HumanoidModel<?> getGenericArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
                                                                    EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
                 if (this.renderer == null)
                     this.renderer = new HelmetCM8MRenderer();

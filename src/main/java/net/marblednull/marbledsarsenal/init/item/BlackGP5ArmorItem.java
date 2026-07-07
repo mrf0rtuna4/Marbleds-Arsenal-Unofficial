@@ -35,7 +35,7 @@ public class BlackGP5ArmorItem extends ArmorItem implements GeoItem {
             private BlackGP5Renderer renderer;
 
             @Override
-            public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
+            public @NotNull HumanoidModel<?> getGenericArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
                                                                    EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
                 if (this.renderer == null)
                     this.renderer = new BlackGP5Renderer();

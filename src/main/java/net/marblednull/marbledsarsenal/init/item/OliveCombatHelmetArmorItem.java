@@ -35,7 +35,7 @@ public class OliveCombatHelmetArmorItem extends ArmorItem implements GeoItem {
             private OliveCombatHelmetRenderer renderer;
 
             @Override
-            public @NotNull HumanoidModel<?> getHumanoidArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
+            public @NotNull HumanoidModel<?> getGenericArmorModel(LivingEntity LivingEntity, ItemStack itemStack,
                                                                    EquipmentSlot equipmentSlot, HumanoidModel<?> original) {
                 if (this.renderer == null)
                     this.renderer = new OliveCombatHelmetRenderer();
