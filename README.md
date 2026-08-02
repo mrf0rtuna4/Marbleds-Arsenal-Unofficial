@@ -2,7 +2,7 @@
 
 This repository contains an **unofficial port** of **Marbled's Arsenal**, originally created by **MarbledNull**.
 
-The original project is a core mod for Minecraft Forge 1.16.5–1.20.1 and is required by some of MarbledNull's mods. It can also be used as a standalone mod with its own features.
+The original project is a Marbled's Arsenal (Legacy) is a mod for Forge 1.16.5+ that adds tactical and militaristic armours (and melee weapons 1.16.5-1.19.2) while aiming to be vanilla friendly. A project from MarbledHubb Studios. REQUIRES GECKOLIB & 1.19.2+ MISCELLANEOUS METALS (Formerly Marbled's Core). Incompatible with OptiFine.
 
 ## Support
 
