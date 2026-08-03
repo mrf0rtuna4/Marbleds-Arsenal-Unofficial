@@ -16,8 +16,6 @@ import net.neoforged.neoforge.registries.DeferredRegister;
 import java.util.List;
 import java.util.Map;
 
-import static net.neoforged.neoforge.internal.versions.neoforge.NeoForgeVersion.MOD_ID;
-
 public final class MaArmorMaterials {
 
     public static final DeferredRegister<ArmorMaterial> ARMOR_MATERIALS =
@@ -37,7 +35,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(Items.LEATHER),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "hat")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "hat")
                             )
                     ),
                     0.0F,
@@ -58,7 +56,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "combat_helmet")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "combat_helmet")
                             )
                     ),
                     0.0F,
@@ -79,7 +77,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "plate_carrier_light")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "plate_carrier_light")
                             )
                     ),
                     0.5F,
@@ -100,7 +98,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "plate_carrier_heavy")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "plate_carrier_heavy")
                             )
                     ),
                     1.5F,
@@ -121,7 +119,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "gas_mask")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "helmet")
                             )
                     ),
                     0.0F,
@@ -142,7 +140,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(Items.LEATHER),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "hazmat")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "hazmat")
                             )
                     ),
                     0.0F,
@@ -163,7 +161,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(Items.LEATHER),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "ghillie")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "ghillie")
                             )
                     ),
                     0.0F,
@@ -184,7 +182,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(Items.LEATHER),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "civil")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "civil")
                             )
                     ),
                     2.0F,
@@ -205,7 +203,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "tactical")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "tactical")
                             )
                     ),
                     2.0F,
@@ -226,7 +224,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.STEEL_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "military")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "military")
                             )
                     ),
                     2.0F,
@@ -247,7 +245,7 @@ public final class MaArmorMaterials {
                     () -> Ingredient.of(ModItems.TITANIUM_INGOT.get()),
                     List.of(
                             new ArmorMaterial.Layer(
-                                    ResourceLocation.fromNamespaceAndPath(MOD_ID, "juggernaut")
+                                    ResourceLocation.fromNamespaceAndPath(MarbledsArsenal.MODID, "juggernaut")
                             )
                     ),
                     3.0F,
