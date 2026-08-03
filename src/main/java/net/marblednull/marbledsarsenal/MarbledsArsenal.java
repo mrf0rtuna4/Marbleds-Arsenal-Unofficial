@@ -13,7 +13,6 @@ import net.neoforged.fml.event.lifecycle.FMLClientSetupEvent;
 import net.neoforged.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.neoforged.neoforge.event.server.ServerStartingEvent;
 
-// The value here should match an entry in the META-INF/mods.toml file
 @Mod(MarbledsArsenal.MODID)
 public class MarbledsArsenal
 {
