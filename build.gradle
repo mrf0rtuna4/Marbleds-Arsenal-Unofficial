@@ -146,8 +146,7 @@ dependencies {
     // compileOnly "mezz.jei:jei-${mc_version}-neoforge-api:${jei_version}"
     // We add the full version to localRuntime, not runtimeOnly, so that we do not publish a dependency on it
     // localRuntime "mezz.jei:jei-${mc_version}-neoforge:${jei_version}"
-    implementation "curse.maven:durability-tooltip-511040:4741017"
-    implementation "curse.maven:supermartijn642s-config-lib-438332:4715408"
+
     implementation("net.marblednull:mcore:1.1.0")
     implementation "software.bernie.geckolib:geckolib-neoforge-${minecraft_version}:${geckolib_version}"
 
