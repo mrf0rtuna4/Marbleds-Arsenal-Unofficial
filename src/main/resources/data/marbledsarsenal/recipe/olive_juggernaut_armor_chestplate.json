@@ -1,0 +1,23 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iGi",
+    "iFi",
+    "iii"
+  ],
+  "key": {
+    "i": {
+      "tag": "neoforge:ingots/titanium"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    },
+    "F": {
+      "item": "marbledsarsenal:armor_plate"
+    }
+  },
+  "result": {
+    "id": "marbledsarsenal:olive_juggernaut_armor_chestplate",
+    "count": 1
+  }
+}

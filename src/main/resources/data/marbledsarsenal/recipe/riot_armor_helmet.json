@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "IGI"
+  ],
+  "key": {
+    "i": {
+      "tag": "neoforge:ingots/steel"
+    },
+    "I": {
+      "item": "mcore:steel_sheet"
+    },
+    "G": {
+      "item": "minecraft:gray_dye"
+    }
+  },
+  "result": {
+    "id": "marbledsarsenal:riot_armor_helmet",
+    "count": 1
+  }
+}

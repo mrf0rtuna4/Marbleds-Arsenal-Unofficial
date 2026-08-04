@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "IGI"
+  ],
+  "key": {
+    "i": {
+      "tag": "neoforge:ingots/steel"
+    },
+    "I": {
+      "item": "mcore:steel_sheet"
+    },
+    "G": {
+      "item": "minecraft:blue_dye"
+    }
+  },
+  "result": {
+    "id": "marbledsarsenal:swat_armor_helmet",
+    "count": 1
+  }
+}

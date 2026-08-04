@@ -1,0 +1,22 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#G#",
+    "i i"
+  ],
+  "key": {
+    "#": {
+      "item": "mcore:steel_sheet"
+    },
+    "G": {
+      "item": "minecraft:gray_dye"
+    },
+    "i": {
+      "tag": "neoforge:ingots/steel"
+    }
+  },
+  "result": {
+    "id": "marbledsarsenal:riot_armor_boots",
+    "count": 1
+  }
+}

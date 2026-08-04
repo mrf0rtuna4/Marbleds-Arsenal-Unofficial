@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "iii",
+    "iGi"
+  ],
+  "key": {
+    "i": {
+      "tag": "neoforge:ingots/titanium"
+    },
+    "G": {
+      "item": "minecraft:green_dye"
+    }
+  },
+  "result": {
+    "id": "marbledsarsenal:olive_juggernaut_armor_helmet",
+    "count": 1
+  }
+}

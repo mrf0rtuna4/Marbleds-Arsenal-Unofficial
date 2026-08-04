@@ -1,0 +1,26 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "#i#",
+    "iGi",
+    "O#O"
+  ],
+  "key": {
+    "#": {
+      "item": "mcore:steel_sheet"
+    },
+    "i": {
+      "tag": "neoforge:ingots/steel"
+    },
+    "G": {
+      "item": "minecraft:glass_pane"
+    },
+    "O": {
+      "item": "marbledsarsenal:gas_mask_filter"
+    }
+  },
+  "result": {
+    "id": "marbledsarsenal:cm8m_gas_mask",
+    "count": 1
+  }
+}
