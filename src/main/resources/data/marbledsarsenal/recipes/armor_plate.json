@@ -10,7 +10,7 @@
       "item": "mcore:steel_sheet"
     },
     "i": {
-      "tag": "forge:ingots/steel"
+      "tag": "neoforge:ingots/steel"
     }
   },
   "result": {
